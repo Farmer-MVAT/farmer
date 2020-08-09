@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>CROP INSURANCE</h1>
+    </div>
+    <div>
+        <marquee>शेवटच्या तारखेची वाट न पाहता, आजच आपला पीकविमा भरा.</marquee>
+    </div>
+
+
+    <div class="topnav">
+        <ul>
+            <li><a [routerLink]="['/homelink']">Home</a></li>
+            <li><a [routerLink]="['/newpolicy']">Apply for new insurance policy</a></li>
+            <li><a [routerLink]="['/claimpolicy']">claim policy</a></li>
+        </ul>
+    </div>
+
+    <h2 style="text-align: center;">Particulars of Insuree</h2>
+    <form id="newpolicy">
+        <!-- url pattern of servlet -->
+        <!-- <form onsubmit="validate()" method="post" action="registerUser"> -->
+        <!-- jsp page -->
+
+        <div class="container">
+            <label for="company">Choose your insurance company:</label>
+            <select name="companies" id="companies">
+                <option>- Select -</option>
+                <option value="icici">ICICI</option>
+                <option value="pnb">PNB</option>
+                <option value="hdfc">HDFC</option>
+                <option value="obc">OBC</option>
+                <option value="bob">BOB</option>
+            </select><br>
+
+            <label for="pno"><b>Policy Number</b></label>
+            <input type="text" placeholder="Enter your polici number" name="pno" required>
+            <br>
+
+            <label for="sum"><b>Sum Assured</b></label>
+            <input type="text" placeholder="Enter Sum Assured" name="sum" required>
+            <br>
+
+            <label for="fid"><b>Farmer username</b></label>
+            <input type="text" placeholder="Enter your username" name="uname" id="uname" required>
+            <br>
+
+            <h2 style="text-align: center;">Details of Cause for Loss</h2>
+            <br>
+
+            <label for="dol">Date of Loss:</label>
+            <input type="date" id="dol" name="dol">
+            <br>
+
+
+            <label for="col"><b>Cause of loss</b></label>
+            <select name="col" id="col">
+                <option>- Select Cause -</option>
+                <option value="loss1">Prevented Sowing/ Planting Risk</option>
+                <option value="loss2">Standing Crop</option>
+                <option value="loss3">Post-Harvest Losses</option>
+                <option value="loss4">Localized Calamities</option>
+
+            </select>
+            <br>
+
+
+            <input type="button" onclick="myFunction()" value="Reset form">
+            <button type="submit">CLAIM</button>
+        </div>
+    </form>
+</body>
+
+</html>

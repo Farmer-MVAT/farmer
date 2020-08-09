@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSURANCE</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>CROP INSURANCE</h1>
+    </div>
+    <div>
+        <marquee>शेवटच्या तारखेची वाट न पाहता, आजच आपला पीकविमा भरा.</marquee>
+    </div>
+
+
+    <div class="topnav">
+        <ul>
+            <li><a [routerLink]="['/homelink']">Home</a></li>
+            <li><a [routerLink]="['/newpolicy']">Apply for new insurance policy</a></li>
+            <li><a [routerLink]="['/claimpolicy']">claim policy</a></li>
+            <li><a [routerLink]="['/farmerlogin']">logout</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+
+
+
+    <div class="footer">
+        <p>© Copyright Kisan vikas Insurance Group | 2020</p>
+    </div>
+
+
+
+</body>
+
+</html>
